@@ -28,49 +28,49 @@ Address: {{ resume_addr }}
 
 # Experience
 
-## OnShift, Software Engineer, 
+## OnShift, Software Engineer  
 7/28/2014 to python -c 'from datetime import date; print(date.today())'
 
 ### sysadmin
 
-- Improved reliability, security, and performance by using
+- Improved reliability, security, and performance by using  
   ansible to get snowflake servers under configuration management.
 
-- Handled the Shellshock security incident and cleanup of compromised
+- Handled the Shellshock security incident and cleanup of compromised  
   server. 
-    - Wrote a patch for bash and deployed to public facing vulnerable
+    - Wrote a patch for bash and deployed to public facing vulnerable  
       servers when the first Ubuntu-provided patch failed to fix issue.
 
-- To handle an increase in traffic causing a bottleneck with our webapp, 
+- To handle an increase in traffic causing a bottleneck with our webapp,  
   deployed an nginx load balancer for the application servers.
     - Increased uptime to 99%.
-    - Allowed for rolling upgrades of the webapp,
+    - Allowed for rolling upgrades of the webapp,  
       (not counting database DDL changes).
 
-- Designed and implemented flask app server environments and
+- Designed and implemented flask app server environments and  
   deployment process with python, debian packages and ansible.
-    - Allows for multiple flask apps to be developed and
+    - Allows for multiple flask apps to be developed and  
       implemented quickly using the flask app server "template".
 
-- Deployed nagios monitoring with custom plugin scripts to detect
-  common failures such as SSL grade, DNS and SSL cert expiration,
+- Deployed nagios monitoring with custom plugin scripts to detect  
+  common failures such as SSL grade, DNS and SSL cert expiration,  
   runaway web processes, and external API failures.
 
 ### build process
 
-- Wrote shell scripts and ansible code to quickly get dependencies of
-  projects automated for multiple webapps. The shell scripts also had
+- Wrote shell scripts and ansible code to quickly get dependencies of  
+  projects automated for multiple webapps. The shell scripts also had  
   debian packaging functions to create packages for deployment.
 
-- Writing python build scripts to use lxc containers and ansible to create
+- Writing python build scripts to use lxc containers and ansible to create  
   environments.
-    - Allows the entire app, including databases, celery, and other 	 	   
+    - Allows the entire app, including databases, celery, and other  
       infrastructure dependencies to run locally in a container.
 
-- Container created with the same ansible code used to manage 						   
+- Container created with the same ansible code used to manage  
   production, increasing stability of the build and deployment system.
 
-- Implemented binary packaging into the release process, improving
+- Implemented binary packaging into the release process, improving  
   reliability and speed of deployments while reducing risk of failed  
   deployments, since updates could be rolled back with an automated 
   process.
