@@ -3,7 +3,7 @@ Ben "bmoar" Morris
 
 Cell: {{ resume_phone_num }}
 
-Email: {{ resume_email }}
+Email: ben@rooted.systems
 
 Address: {{ resume_addr }}
 
@@ -28,52 +28,58 @@ Address: {{ resume_addr }}
 
 # Experience
 
-## OnShift, Software Engineer, 7/28/2014 to python -c 'from datetime import date; print(date.today())'
+## OnShift, Software Engineer, 
+7/28/2014 to python -c 'from datetime import date; print(date.today())'
 
 ### sysadmin
 
 - Improved reliability, security, and performance by using
-ansible to get snowflake servers under configuration management.
+  ansible to get snowflake servers under configuration management.
 
-- Handled the Shellshock security incident by writing a custom
-patch for bash and deployed to all vulnerable public facing servers.
-Isolated and cleaned up a compromised server.
+- Handled the Shellshock security incident and cleanup of compromised
+  server. 
+    - Wrote a patch for bash and deployed to public facing vulnerable
+      servers when the first Ubuntu-provided patch failed to fix issue.
 
 - To handle an increase in traffic causing a bottleneck with our webapp, 
-deployed an nginx load balancer for the application servers.
-This brought uptime to 99% and allowed for rolling upgrades of the 
-webapp (not counting database DDL changes).
+  deployed an nginx load balancer for the application servers.
+    - Increased uptime to 99%.
+    - Allowed for rolling upgrades of the webapp,
+      (not counting database DDL changes).
 
-- Designed and implemented flask app server environments and deployment
-process with python, debian packages and ansible. This allowed for
-multiple flask apps to be developed and implemented quickly using
-the flask app server "template".
+- Designed and implemented flask app server environments and
+  deployment process with python, debian packages and ansible.
+    - Allows for multiple flask apps to be developed and
+      implemented quickly using the flask app server "template".
 
 - Deployed nagios monitoring with custom plugin scripts to detect
-common failures such as SSL grade, DNS and SSL cert expiration,
-runaway web processes, and external API failures.
+  common failures such as SSL grade, DNS and SSL cert expiration,
+  runaway web processes, and external API failures.
 
 ### build process
 
-- Wrote shell scripts and ansible code to quickly get dependencies of projects automated
-for multiple webapps. The shell scripts also had debian packaging functions
-to create packages for deployment.
+- Wrote shell scripts and ansible code to quickly get dependencies of
+  projects automated for multiple webapps. The shell scripts also had
+  debian packaging functions to create packages for deployment.
 
-- Rewriting the build scripts in python to use lxc containers and ansible to create 
-environments. This will allow the entire app, including databases, celery, and other
-infrastructure dependencies to run on a developer's machine in a container.
-Since this container is created with the same ansible code used to manage production,
-it increases stability of the build and deployment system because the system will be 
-tested every day by developers, QA, and sysadmins.
+- Writing python build scripts to use lxc containers and ansible to create
+  environments.
+    - Allows the entire app, including databases, celery, and other 	 	   
+      infrastructure dependencies to run locally in a container.
 
-- Implemented binary packaging into the release process, improving reliability and speed of deployments
-while reducing risk of failed deployments, since they could be rolled back using an automated process.
+- Container created with the same ansible code used to manage 						   
+  production, increasing stability of the build and deployment system.
+
+- Implemented binary packaging into the release process, improving
+  reliability and speed of deployments while reducing risk of failed  
+  deployments, since updates could be rolled back with an automated 
+  process.
 
 # Side Projects / Learning
 
 - Pentesting with Kali Linux
 
-- Binary exploits with ROP, shellcoding, reversing
+- Binary exploits with ROP
 
 - currently working on overthewire CTF
 
