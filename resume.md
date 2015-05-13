@@ -1,7 +1,11 @@
 # Contact
 Ben "bmoar" Morris
-Cell: {{ resume_phone_num }}					    {{ resume_addr }}
+
+Cell: {{ resume_phone_num }}
+
 Email: {{ resume_email }}
+
+Address: {{ resume_addr }}
 
 # Skills
 
