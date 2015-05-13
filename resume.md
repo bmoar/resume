@@ -66,3 +66,13 @@ Pentesting with Kali
 Binary exploits with ROP, shellcoding, reversing
 
 overthewire CTF
+
+# Education
+
+The University of Toledo, Toledo, Ohio
+
+Bachelor of Science in Information Technology
+
+Graduation Date: May 2nd, 2014
+
+Deans List x4
