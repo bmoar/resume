@@ -44,9 +44,9 @@ deployed an nginx load balancer for the application servers.
 This brought uptime to 99% and allowed for rolling upgrades of the 
 webapp (not counting database DDL changes).
 
-- Designed and implimented flask app server environments and deployment
+- Designed and implemented flask app server environments and deployment
 process with python, debian packages and ansible. This allowed for
-multiple flask apps to be developed and implimented quickly using
+multiple flask apps to be developed and implemented quickly using
 the flask app server "template".
 
 - Deployed nagios monitoring with custom plugin scripts to detect
@@ -66,7 +66,7 @@ Since this container is created with the same ansible code used to manage produc
 it increases stability of the build and deployment system because the system will be 
 tested every day by developers, QA, and sysadmins.
 
-- Implimented binary packaging into the release process, improving reliability and speed of deployments
+- Implemented binary packaging into the release process, improving reliability and speed of deployments
 while reducing risk of failed deployments, since they could be rolled back using an automated process.
 
 # Side Projects / Learning
