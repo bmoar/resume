@@ -1,4 +1,5 @@
-Benjamin R. Morris
+# Contact
+Ben "bmoar" Morris
 Cell: {{ resume_phone_num }}					    {{ resume_addr }}
 Email: {{ resume_email }}
 
@@ -27,45 +28,50 @@ Email: {{ resume_email }}
 
 ### sysadmin
 
-Improved reliability, security, and performance by using
+- Improved reliability, security, and performance by using
 ansible to get snowflake servers under configuration management.
 
-Handled the Shellshock security incident by writing a custom
+- Handled the Shellshock security incident by writing a custom
 patch for bash and deployed to all vulnerable public facing servers.
 Isolated and cleaned up a compromised server.
 
-To handle an increase in traffic causing a bottleneck with our webapp, 
+- To handle an increase in traffic causing a bottleneck with our webapp, 
 deployed an nginx load balancer for the application servers.
 This brought uptime to 99% and allowed for rolling upgrades of the 
 webapp (not counting database DDL changes).
 
-Designed and implimented flask app server environments and deployment
+- Designed and implimented flask app server environments and deployment
 process with python, debian packages and ansible. This allowed for
 multiple flask apps to be developed and implimented quickly using
 the flask app server "template".
 
-Deployed nagios monitoring with custom plugin scripts to detect
+- Deployed nagios monitoring with custom plugin scripts to detect
 common failures such as SSL grade, DNS and SSL cert expiration,
 runaway web processes, and external API failures.
 
 ### build process
 
-build.sh script to quickly get dependencies scripted instead of manual
-uses ansible to deploy using stage env targeted at localhost
+- Wrote shell scripts and ansible code to quickly get dependencies of projects automated
+for multiple webapps. The shell scripts also had debian packaging functions
+to create packages for deployment.
 
-build.py which uses python3-lxc containers and ansible to create env with local
-databases rm stage-db bottleneck and improving security by keeping PPI out of every dev hands
+- Rewriting the build scripts in python to use lxc containers and ansible to create 
+environments. This will allow the entire app, including databases, celery, and other
+infrastructure dependencies to run on a developer's machine in a container.
+Since this container is created with the same ansible code used to manage production,
+it increases stability of the build and deployment system because the system will be 
+tested every day by developers, QA, and sysadmins.
 
-use deb packages to move from source deployments to binary deployments, 
-improving reliability of deployments
+- Implimented binary packaging into the release process, improving reliability and speed of deployments
+while reducing risk of failed deployments, since they could be rolled back using an automated process.
 
 # Side Projects / Learning
 
-Pentesting with Kali
+- Pentesting with Kali Linux
 
-Binary exploits with ROP, shellcoding, reversing
+- Binary exploits with ROP, shellcoding, reversing
 
-overthewire CTF
+- currently working on overthewire CTF
 
 # Education
 
