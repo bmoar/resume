@@ -19,7 +19,6 @@ Address: {{ resume_addr }}
         - deb package servers
         - nagios && nrpe plugins
         - postgresql-server
-        - ansible
 
 ## Occasional use
     - C
