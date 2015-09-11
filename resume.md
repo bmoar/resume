@@ -3,7 +3,7 @@ Ben "bmoar" Morris
 
 Cell: {{ resume_phone_num }}
 
-Email: ben@rooted.systems
+Email: echo -e 'ben\x40rooted.systems'
 
 Address: {{ resume_addr }}
 
@@ -19,7 +19,7 @@ Address: {{ resume_addr }}
         - deb package servers
         - nagios && nrpe plugins
         - postgresql-server
-        - libvirt ( more lxc than kvm )
+        - ansible
 
 ## Occasional use
     - C
