@@ -55,6 +55,10 @@ Address: {{ resume_addr }}
   common failures such as SSL grade, DNS and SSL cert expiration,  
   runaway web processes, and external API failures.
 
+- Automated postgresql database cluster ( async replication ) with
+  ansible, including custom modules written in python for ansible
+  to manage the database clustering
+
 ### build process
 
 - Wrote shell scripts and ansible code to quickly get dependencies of  
